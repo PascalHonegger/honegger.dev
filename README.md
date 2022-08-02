@@ -1,38 +1,25 @@
-# create-svelte
+# honegger.dev - Portfolio Website for Pascal Honegger
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+My personal work-in-progress portfolio website.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+After first clone you'll need to run `pnpm install` (using [pnpm](https://pnpm.io/)).
+You can then start a development server by running the following commands:
 
 ```bash
-npm run dev
+pnpm dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm dev --open
 ```
 
 ## Building
 
-To create a production version of your app:
+You can easily create a static production version:
 
 ```bash
-npm run build
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+You can preview the production build with `pnpm preview` or simply serve the webapp using any webserver.
