@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v2
         with:
           version: 7
       - uses: actions/setup-node@v3
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v2
         with:
           version: 7
       - uses: actions/setup-node@v3
@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v2
         with:
           version: 7
       - uses: actions/setup-node@v3
@@ -54,7 +54,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: 'Qodana JS Scan'
-        uses: JetBrains/qodana-action@v2022.2.1
+        uses: JetBrains/qodana-action@v2022.2.4
         with:
           args: '--linter,jetbrains/qodana-js'
           artifact-name: 'qodana-js-report'
