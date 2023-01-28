@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
 	import Header from '$lib/Header/index.svelte';
-	export const prerender = true;
 </script>
 
 <Header />
