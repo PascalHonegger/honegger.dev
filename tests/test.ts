@@ -55,3 +55,18 @@ test('navigation between pages works', async ({ page }) => {
 	await about.click();
 	await expect(page).toHaveURL('/');
 });
+
+test('index page snapshot', async ({ page }) => {
+	await page.goto('/');
+	await expect(page).toHaveScreenshot('index.png');
+});
+
+test('setup page snapshot', async ({ page }) => {
+	await page.goto('/setup');
+	await expect(page).toHaveScreenshot('setup.png');
+});
+
+test('projects page snapshot', async ({ page }) => {
+	await page.goto('/projects');
+	await expect(page).toHaveScreenshot('projects.png');
+});
