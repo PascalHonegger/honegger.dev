@@ -8,6 +8,7 @@
 		"preview": "vite preview",
 		"postinstall": "svelte-kit sync",
 		"test": "playwright test",
+		"test:update": "playwright test --update-snapshots",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
