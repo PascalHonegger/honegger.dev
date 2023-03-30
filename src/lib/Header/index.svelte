@@ -24,7 +24,8 @@
 	<nav class="flex flex-row gap-x-2 md:gap-x-6">
 		{#each routes as { href, label, icon }}
 			<a {href} class="nav-link" class:active={$page.url.pathname.split('?')[0] === href}
-				><svelte:component this={icon} /><span class="hidden sm:inline">{label}</span></a
+				><svelte:component this={icon} class="h-6" /><span class="hidden sm:inline">{label}</span
+				></a
 			>
 		{/each}
 	</nav>
@@ -32,7 +33,7 @@
 
 <style type="postcss">
 	.nav-link {
-		@apply border-4 border-transparent 
+		@apply border-4 border-transparent
 		font-semibold p-2 rounded-md
 		transition-colors
 		grid grid-cols-[20px,_1fr] items-center sm:gap-x-2 md:gap-x-4;
