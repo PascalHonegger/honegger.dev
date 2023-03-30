@@ -54,7 +54,7 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - name: 'Qodana JS Scan'
-        uses: JetBrains/qodana-action@v2022.3.2
+        uses: JetBrains/qodana-action@v2022.3.4
         with:
           args: '--linter,jetbrains/qodana-js'
           artifact-name: 'qodana-js-report'
