@@ -8,9 +8,16 @@ export interface Project {
 
 export const projects: readonly Project[] = [
 	{
+		name: 'SAMT',
+		description:
+			'A domain-specific language to specify service contracts in a technology-agnostic manner',
+		technologies: ['Kotlin', 'Ktor', 'LSP'],
+		github: 'https://github.com/samtkit/core'
+	},
+	{
 		name: 'JassTracker',
 		description: 'A webapp to track and analyze the swiss card game "Coiffeur Jass"',
-		technologies: ['Kotlin', 'Vue.js', 'gRPC', 'jOOQ', 'PostgreSQL'],
+		technologies: ['Kotlin', 'Ktor', 'Vue.js', 'gRPC', 'jOOQ', 'PostgreSQL'],
 		website: 'https://jasstracker.honegger.dev',
 		github: 'https://github.com/PascalHonegger/JassTracker'
 	},
