@@ -36,7 +36,7 @@
 		@apply border-4 border-transparent
 		font-semibold p-2 rounded-md
 		transition-colors
-		grid grid-cols-[20px,_1fr] items-center sm:gap-x-2 md:gap-x-4;
+		grid grid-cols-[20px_1fr] items-center sm:gap-x-2 md:gap-x-4;
 	}
 
 	.nav-link:hover {
