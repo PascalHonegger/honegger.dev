@@ -16,11 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
-        with:
-          version: 8
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
@@ -31,12 +29,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
-        with:
-          version: 8
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpx playwright install --with-deps
+      - run: pnpm install
+      - run: pnpm exec playwright install --with-deps
       - run: pnpm test
