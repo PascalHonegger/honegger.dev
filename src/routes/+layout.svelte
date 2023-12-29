@@ -1,6 +1,18 @@
 <script lang="ts">
-    import '../app.postcss';
-    import Header from '$lib/Header/index.svelte';
+	import '../app.postcss';
+	import Header from '$lib/Header/index.svelte';
+	import { onNavigate } from '$app/navigation';
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <Header />
