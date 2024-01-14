@@ -1,5 +1,9 @@
 # honegger.dev - Portfolio Website for Pascal Honegger
 
+![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m785141314-a9e1dba4a525ea4580f3ce53)
+![Chromium HSTS preload](https://img.shields.io/hsts/preload/honegger.dev)
+[![honegger.dev build](https://github.com/PascalHonegger/honegger.dev/actions/workflows/honegger.yml/badge.svg)](https://github.com/PascalHonegger/honegger.dev/actions/workflows/honegger.yml)
+
 My personal work-in-progress portfolio website.
 
 ## Developing
