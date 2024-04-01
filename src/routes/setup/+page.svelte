@@ -27,8 +27,8 @@
 				>
 				for creating my custom styles. I decided to opt into
 				<a href="https://pnpm.io/" rel="noopener noreferrer external" target="_blank">pnpm</a> to manage
-				my NPM dependencies to greatly reduce install times. I'm a good web developer but by no means
-				a designer, but I still like the way this website turned out.
+				my NPM dependencies and greatly reduce install times. I'm a good web developer but by no means
+				a designer, but I still like the way this site turned out.
 			</p>
 		</section>
 	</Box>
@@ -38,8 +38,8 @@
 
 		<section>
 			<p>
-				Ofcourse no modern website can work without continous integration and deployments. I decided
-				to use <a
+				Of course, no modern website can operate without continuous integration and deployment. I
+				decided to use <a
 					href="https://github.com/features/actions"
 					rel="noopener noreferrer external"
 					target="_blank">GitHub Actions</a
@@ -53,9 +53,9 @@
 
 		<section>
 			<p>
-				The obvious solution for hosting this static webpage would be the cloud. But if I did that,
-				I couldn't easly experiment with cool features like HTTP/3, TLS 1.3, a custom DMZ and all
-				the problems that come with hosting a website yourself.
+				The obvious solution for hosting this static website would be the cloud. But if I did that,
+				I couldn't easily experiment with cool features like HTTP/3, TLS 1.3, a custom DMZ and all
+				the problems that come with hosting a site yourself.
 			</p>
 		</section>
 	</Box>

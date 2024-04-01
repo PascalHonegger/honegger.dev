@@ -2,8 +2,8 @@
 	import Box from '$lib/Box/index.svelte';
 	import ImageLink from '$lib/ImageLink/index.svelte';
 	import GitHub from '$lib/logos/GitHub-Dark.png';
-	import Gugus from '@fortawesome/fontawesome-free/svgs/solid/up-right-from-square.svg?url';
-	import { projects } from './projects';
+	import OpenExternally from '@fortawesome/fontawesome-free/svgs/solid/up-right-from-square.svg?url';
+	import projects from '$lib/Data/projects';
 </script>
 
 <svelte:head>
@@ -35,7 +35,7 @@
 				class="absolute inset-x-4 bottom-4 md:inset-x-6 md:bottom-6 flex flex-row justify-end gap-x-2"
 			>
 				{#if website}
-					<ImageLink src={Gugus} alt="Gugus" href={website} />
+					<ImageLink src={OpenExternally} alt="OpenExternally" href={website} />
 				{/if}
 				{#if github}
 					<ImageLink src={GitHub} alt="GitHub" href={github} />
