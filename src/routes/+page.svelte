@@ -1,19 +1,8 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import LinkedIn from '$lib/logos/LinkedIn.png';
-	import GitHub from '$lib/logos/GitHub-Dark.png';
 	import Box from '$lib/Box/index.svelte';
 	import ImageLink from '$lib/ImageLink/index.svelte';
-
-	interface Social {
-		href: string;
-		src: string;
-		alt: string;
-	}
-	const socials: readonly Social[] = [
-		{ src: LinkedIn, alt: 'LinkedIn', href: 'https://ch.linkedin.com/in/pascal-honegger' },
-		{ src: GitHub, alt: 'GitHub', href: 'https://github.com/PascalHonegger' }
-	];
+	import socials from '$lib/Data/socials';
 </script>
 
 <svelte:head>
@@ -35,9 +24,9 @@
 			<li>
 				Enjoys using the latest and greatest technologies (see <a href="{base}/setup">here</a> for proof)
 			</li>
-			<li>Hobbies include watching Netflix, playing Chess and solving Rubik's Cubes in ~30s</li>
+			<li>Hobbies include gaming, playing chess and solving Rubik's Cubes in ~30s</li>
 			<li>
-				More details available online:
+				More details are available online:
 				{#each socials as { href, src, alt }}
 					<ImageLink {href} {src} {alt} />
 				{/each}
@@ -50,7 +39,7 @@
 	<section>
 		<h2>Work in Progress</h2>
 		<p>
-			More content is currently in development, you can follow the latest updates on this website on <a
+			More content is currently in development, you can follow the latest updates on this website at <a
 				href="https://github.com/PascalHonegger/honegger.dev"
 				rel="noopener noreferrer external"
 				target="_blank">GitHub</a

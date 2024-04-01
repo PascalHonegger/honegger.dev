@@ -1,21 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
-	import ImagePortrait from '@fortawesome/fontawesome-free/svgs/solid/image-portrait.svg?component';
-	import Code from '@fortawesome/fontawesome-free/svgs/solid/code.svg?component';
-	import FolderTree from '@fortawesome/fontawesome-free/svgs/solid/folder-tree.svg?component';
-	import type { ComponentType } from 'svelte';
-
-	interface Route {
-		href: string;
-		label: string;
-		icon: ComponentType;
-	}
-	const routes: readonly Route[] = [
-		{ href: `${base}/`, label: 'About Me', icon: ImagePortrait },
-		{ href: `${base}/setup`, label: 'How This Site Is Built', icon: Code },
-		{ href: `${base}/projects`, label: 'My Projects', icon: FolderTree }
-	];
+	import routes from '$lib/Data/routes';
 </script>
 
 <header
@@ -36,7 +21,7 @@
 		@apply border-4 border-transparent
 		font-semibold p-2 rounded-md
 		transition-colors
-		grid grid-cols-[20px_1fr] items-center sm:gap-x-2 md:gap-x-4;
+		grid grid-cols-[28px_1fr] items-center justify-items-center sm:gap-x-2 md:gap-x-4;
 	}
 
 	.nav-link:hover {
