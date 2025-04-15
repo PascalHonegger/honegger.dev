@@ -18,7 +18,7 @@
 		"@playwright/test": "^1.44.0",
 		"@poppanator/sveltekit-svg": "^4.2.1",
 		"@sveltejs/adapter-static": "^3.0.1",
-		"@sveltejs/kit": "^2.5.7",
+		"@sveltejs/kit": "^2.20.6",
 		"@sveltejs/vite-plugin-svelte": "^3.1.0",
 		"@types/dom-view-transitions": "^1.0.4",
 		"@typescript-eslint/eslint-plugin": "^7.8.0",
