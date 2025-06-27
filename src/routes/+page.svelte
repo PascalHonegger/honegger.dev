@@ -27,7 +27,7 @@
 			<li>Hobbies include gaming, playing chess and solving Rubik's Cubes in ~30s</li>
 			<li>
 				More details are available online:
-				{#each socials as { href, src, alt }}
+				{#each socials as { href, src, alt } (href)}
 					<ImageLink {href} {src} {alt} />
 				{/each}
 			</li>

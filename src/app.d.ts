@@ -11,4 +11,4 @@ declare namespace App {
 }
 
 // See https://github.com/poppa/sveltekit-svg#typescript
-import '@poppanator/sveltekit-svg/dist/svg';
+import '@poppanator/sveltekit-svg/dist/svg.d.ts';
