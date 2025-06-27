@@ -18,21 +18,21 @@
 	</section>
 </Box>
 
-<section class="grid md:grid-cols-3 sm:grid-cols-2 gap-x-2 sm:gap-x-4 md:gap-x-6">
-	{#each projects as { name, description, technologies, github, website }}
+<section class="grid gap-x-2 sm:grid-cols-2 sm:gap-x-4 md:grid-cols-3 md:gap-x-6">
+	{#each projects as { name, description, technologies, github, website } (name)}
 		<Box class="relative md:h-72">
 			<h2>{name}</h2>
 			<p>{description}</p>
 			<span class="flex flex-row flex-wrap gap-2">
-				{#each technologies as technology}
+				{#each technologies as technology (technology)}
 					<span
-						class="inline-flex items-center rounded-full border-2 border-green-200 bg-green-200 px-2 py-1 text-sm font-semibold text-green-600 shadow-sm"
+						class="inline-flex items-center rounded-full border-2 border-green-200 bg-green-200 px-2 py-1 text-sm font-semibold text-green-600 shadow-xs"
 						>{technology}</span
 					>
 				{/each}
 			</span>
 			<span
-				class="absolute inset-x-4 bottom-4 md:inset-x-6 md:bottom-6 flex flex-row justify-end gap-x-2"
+				class="absolute inset-x-4 bottom-4 flex flex-row justify-end gap-x-2 md:inset-x-6 md:bottom-6"
 			>
 				{#if website}
 					<ImageLink src={OpenExternally} alt="OpenExternally" href={website} />

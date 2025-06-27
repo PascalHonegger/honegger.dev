@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - '@fortawesome/fontawesome-free'
+  - '@sveltejs/kit'
+  - '@tailwindcss/oxide'
+  - esbuild
+  - svelte-preprocess

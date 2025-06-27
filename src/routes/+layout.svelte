@@ -1,7 +1,13 @@
 <script lang="ts">
-	import '../app.postcss';
+	import '../app.css';
 	import Header from '$lib/Header/index.svelte';
 	import { onNavigate } from '$app/navigation';
+	import type { Snippet } from 'svelte';
+	interface Props {
+		children?: Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
@@ -17,6 +23,6 @@
 
 <Header />
 
-<main class="px-2 md:px-6 max-w-4xl">
-	<slot />
+<main class="max-w-4xl px-2 md:px-6">
+	{@render children?.()}
 </main>

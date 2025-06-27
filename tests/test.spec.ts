@@ -22,19 +22,23 @@ test('projects page has expected h1', async ({ page }) => {
 
 test('current page has active url', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.locator('a', { hasText: 'About Me' })).toHaveClass(/active/);
-	await expect(page.locator('a', { hasText: 'How This Site Is Built' })).not.toHaveClass(/active/);
-	await expect(page.locator('a', { hasText: 'My Projects' })).not.toHaveClass(/active/);
+	await expect(page.locator('a', { hasText: 'About Me' })).toHaveClass(/bg-gray-200/);
+	await expect(page.locator('a', { hasText: 'How This Site Is Built' })).not.toHaveClass(
+		/bg-gray-200/
+	);
+	await expect(page.locator('a', { hasText: 'My Projects' })).not.toHaveClass(/bg-gray-200/);
 
 	await page.goto('/setup');
-	await expect(page.locator('a', { hasText: 'About Me' })).not.toHaveClass(/active/);
-	await expect(page.locator('a', { hasText: 'How This Site Is Built' })).toHaveClass(/active/);
-	await expect(page.locator('a', { hasText: 'My Projects' })).not.toHaveClass(/active/);
+	await expect(page.locator('a', { hasText: 'About Me' })).not.toHaveClass(/bg-gray-200/);
+	await expect(page.locator('a', { hasText: 'How This Site Is Built' })).toHaveClass(/bg-gray-200/);
+	await expect(page.locator('a', { hasText: 'My Projects' })).not.toHaveClass(/bg-gray-200/);
 
 	await page.goto('/projects');
-	await expect(page.locator('a', { hasText: 'About Me' })).not.toHaveClass(/active/);
-	await expect(page.locator('a', { hasText: 'How This Site Is Built' })).not.toHaveClass(/active/);
-	await expect(page.locator('a', { hasText: 'My Projects' })).toHaveClass(/active/);
+	await expect(page.locator('a', { hasText: 'About Me' })).not.toHaveClass(/bg-gray-200/);
+	await expect(page.locator('a', { hasText: 'How This Site Is Built' })).not.toHaveClass(
+		/bg-gray-200/
+	);
+	await expect(page.locator('a', { hasText: 'My Projects' })).toHaveClass(/bg-gray-200/);
 });
 
 test('navigation between pages works', async ({ page }) => {

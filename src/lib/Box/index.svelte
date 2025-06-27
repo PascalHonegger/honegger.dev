@@ -1,11 +1,17 @@
 <script lang="ts">
-	let clazz = '';
-	export { clazz as class };
+	import type { Snippet } from 'svelte';
+
+	interface Props {
+		class?: string;
+		children?: Snippet;
+	}
+
+	let { class: clazz = '', children }: Props = $props();
 </script>
 
 <div
-	class="bg-white p-4 md:p-6 shadow-md bg-opacity-75 hover:bg-opacity-90 hover:shadow-lg transition-all mb-4 md:mb-6 {clazz ??
+	class="mb-4 bg-white/75 p-4 shadow-md transition-all hover:bg-white/90 hover:shadow-lg md:mb-6 md:p-6 {clazz ??
 		''}"
 >
-	<slot />
+	{@render children?.()}
 </div>
