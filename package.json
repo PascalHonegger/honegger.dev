@@ -31,7 +31,7 @@
 		"@playwright/test": "^1.53.1",
 		"@poppanator/sveltekit-svg": "^5.0.1",
 		"@sveltejs/adapter-static": "^3.0.8",
-		"@sveltejs/kit": "^2.22.2",
+		"@sveltejs/kit": "^2.49.5",
 		"@sveltejs/vite-plugin-svelte": "^5.1.0",
 		"@tailwindcss/vite": "^4.1.11",
 		"@types/dom-view-transitions": "^1.0.6",
