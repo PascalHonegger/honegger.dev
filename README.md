@@ -16,6 +16,9 @@ pnpm dev
 
 # or start the server and open the app in a new browser tab
 pnpm dev --open
+
+# use docker to run playwright tests locally
+docker run -it --rm -v .:/code mcr.microsoft.com/playwright:v1.61.1-noble /bin/bash
 ```
 
 ## Building
