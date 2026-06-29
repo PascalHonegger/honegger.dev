@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Box from '$lib/Box/index.svelte';
 	import ImageLink from '$lib/ImageLink/index.svelte';
 	import socials from '$lib/Data/socials';
@@ -22,7 +22,8 @@
 			<li>Fullstack developer from Switzerland 🇨🇭</li>
 			<li>Passionate about web development and cyber security</li>
 			<li>
-				Enjoys using the latest and greatest technologies (see <a href="{base}/setup">here</a> for proof)
+				Enjoys using the latest and greatest technologies (see <a href={resolve('/setup')}>here</a> for
+				proof)
 			</li>
 			<li>Hobbies include gaming, playing chess and solving Rubik's Cubes in ~30s</li>
 			<li>
