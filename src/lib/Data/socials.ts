@@ -1,5 +1,5 @@
-import LinkedIn from '$lib/logos/LinkedIn.png';
-import GitHub from '$lib/logos/GitHub-Dark.png';
+import LinkedIn from '#lib/logos/LinkedIn.png';
+import GitHub from '#lib/logos/GitHub-Dark.png';
 
 interface Social {
 	href: string;

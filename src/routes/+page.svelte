@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import Box from '$lib/Box/index.svelte';
-	import ImageLink from '$lib/ImageLink/index.svelte';
-	import socials from '$lib/Data/socials';
+	import Box from '#lib/Box/index.svelte';
+	import ImageLink from '#lib/ImageLink/index.svelte';
+	import socials from '#lib/Data/socials.js';
 </script>
 
 <svelte:head>
@@ -11,7 +11,9 @@
 
 <Box>
 	<h1>
-		Welcome to the Glorious Website of <span class="underline">Pascal&nbsp;Honegger</span> 👋
+		Welcome to the Glorious Website of
+		<span class="underline">Pascal&nbsp;Honegger</span>
+		👋
 	</h1>
 </Box>
 
@@ -22,8 +24,9 @@
 			<li>Fullstack developer from Switzerland 🇨🇭</li>
 			<li>Passionate about web development and cyber security</li>
 			<li>
-				Enjoys using the latest and greatest technologies (see <a href={resolve('/setup')}>here</a> for
-				proof)
+				Enjoys using the latest and greatest technologies (see
+				<a href={resolve('setup')}>here</a>
+				for proof)
 			</li>
 			<li>Hobbies include gaming, playing chess and solving Rubik's Cubes in ~30s</li>
 			<li>

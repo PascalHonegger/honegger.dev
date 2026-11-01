@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import routes from '$lib/Data/routes';
+	import routes from '#lib/Data/routes.js';
 </script>
 
 <header

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import Header from '$lib/Header/index.svelte';
+	import Header from '#lib/Header/index.svelte';
 	import { onNavigate } from '$app/navigation';
 	import type { Snippet } from 'svelte';
 	interface Props {
@@ -10,6 +10,7 @@
 	let { children }: Props = $props();
 
 	onNavigate((navigation) => {
+		if (navigation.shallow && navigation.type === 'goto') return;
 		if (!document.startViewTransition) return;
 
 		return new Promise((resolve) => {
