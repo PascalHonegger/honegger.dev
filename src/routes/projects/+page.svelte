@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Box from '$lib/Box/index.svelte';
-	import ImageLink from '$lib/ImageLink/index.svelte';
-	import GitHub from '$lib/logos/GitHub-Dark.png';
+	import Box from '#lib/Box/index.svelte';
+	import ImageLink from '#lib/ImageLink/index.svelte';
+	import GitHub from '#lib/logos/GitHub-Dark.png';
 	import OpenExternally from '@fortawesome/fontawesome-free/svgs/solid/up-right-from-square.svg?url';
-	import projects from '$lib/Data/projects';
+	import projects from '#lib/Data/projects.js';
 </script>
 
 <svelte:head>
